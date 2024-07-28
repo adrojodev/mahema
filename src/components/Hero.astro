@@ -1,0 +1,22 @@
+---
+import Button from "./Button.astro";
+---
+
+<section class="w-full flex justify-center items-center py-32 px-4">
+  <div
+    class="w-full max-w-6xl flex flex-col-reverse gap-4 md:gap-2 md:grid md:grid-cols-2"
+  >
+    <div class="flex flex-col justify-center">
+      <span class="text-lg font-black text-red-500">MAHEMA</span>
+      <div class="flex flex-col justify-start items-start gap-4">
+        <h1 class="text-5xl md:text-6xl w-2/3 font-bold">
+          Modernas soluciones en montacargas
+        </h1>
+        <Button>Contáctanos</Button>
+      </div>
+    </div>
+    <img
+      class="bg-red-500 w-full h-full aspect-[4/3] md:aspect-[3/4] rounded-md"
+    />
+  </div>
+</section>

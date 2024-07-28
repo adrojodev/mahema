@@ -1,0 +1,52 @@
+---
+import Button from "./Button.astro";
+---
+
+<section class="w-full flex justify-center items-center py-12 px-4">
+  <div
+    class="w-full max-w-6xl flex flex-col gap-8 md:gap-4 md:grid md:grid-cols-2 justify-between rounded-md bg-neutral-50 p-16"
+  >
+    <div class="flex flex-col justify-center items-center md:items-start gap-4">
+      <div class="flex flex-col">
+        <h2 class="text-5xl font-bold">Contáctanos</h2>
+        <p>Preguntanos por nuestras ofertas!</p>
+      </div>
+      <Button>Tenemos whatsapp!</Button>
+    </div>
+    <div class="flex flex-col gap-4 md:gap-6">
+      <div
+        class="flex gap-2 flex-col items-center text-center md:gap-4 md:flex-row"
+      >
+        <img class="bg-red-500 w-10 aspect-square rounded-md" />
+        <div class="flex flex-col">
+          <h4 class="text-xl font-semibold">Correo</h4>
+          <a class="text-red-500 italic hover:underline cursor-pointer"
+            >contacto@gmail.com</a
+          >
+        </div>
+      </div>
+      <div
+        class="flex gap-2 flex-col items-center text-center md:gap-4 md:flex-row"
+      >
+        <img class="bg-red-500 w-10 aspect-square rounded-md" />
+        <div class="flex flex-col">
+          <h4 class="text-xl font-semibold">Teléfono</h4>
+          <a class="text-red-500 italic hover:underline cursor-pointer"
+            >(55) 3026 3069</a
+          >
+        </div>
+      </div>
+      <div
+        class="flex gap-2 flex-col items-center text-center md:gap-4 md:flex-row"
+      >
+        <img class="bg-red-500 w-10 aspect-square rounded-md" />
+        <div class="flex flex-col">
+          <h4 class="text-xl font-semibold">Ubicación</h4>
+          <a class="text-red-500 italic hover:underline cursor-pointer"
+            >Calle ##, colonia, estado. Código Postal</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
