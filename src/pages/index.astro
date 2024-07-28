@@ -10,13 +10,15 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
-    <Navbar />
-    <Hero />
-    <About />
-    <Companies />
-    <Brands />
-    <Contact />
+  <main class="flex flex-col">
+    <div class="flex flex-col px-2">
+      <Navbar />
+      <Hero />
+      <About />
+      <Companies />
+      <Brands />
+      <Contact />
+    </div>
     <Footer />
   </main>
 </Layout>
