@@ -3,18 +3,21 @@
 ---
 
 <section class="w-full flex flex-col gap-8 justify-center items-center py-24">
-  <div class="w-full max-w-6xl gap-8 flex flex-col">
+  <div class="w-full max-w-7xl gap-8 flex flex-col">
     <h2 class="text-4xl font-bold text-center">
       Utilizados por empresas líderes
     </h2>
     <div class="grid grid-cols-2 gap-2 md:flex md:justify-between w-full">
-      <!-- Edit the width once it has images -->
-      <img class="bg-red-500 w-40 aspect-video rounded-md inset-x-0 mx-auto" />
-      <img class="bg-red-500 w-40 aspect-video rounded-md inset-x-0 mx-auto" />
-      <img class="bg-red-500 w-40 aspect-video rounded-md inset-x-0 mx-auto" />
-      <img class="bg-red-500 w-40 aspect-video rounded-md inset-x-0 mx-auto" />
-      <img class="bg-red-500 w-40 aspect-video rounded-md inset-x-0 mx-auto" />
-      <img class="bg-red-500 w-40 aspect-video rounded-md inset-x-0 mx-auto" />
+      {
+        new Array(6)
+          .fill(0)
+          .map((_, i) => (
+            <img
+              src={`/brands/${i}.jpg`}
+              class="aspect-video w-44 grayscale opacity-80 object-center object-cover rounded-md"
+            />
+          ))
+      }
     </div>
   </div>
 </section>

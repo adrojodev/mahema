@@ -1,49 +1,80 @@
 ---
+import MailBox from "phosphor-astro/MailBox.astro";
+import Phone from "phosphor-astro/Phone.astro";
+import MapPin from "phosphor-astro/MapPin.astro";
+import WhatsappLogo from "phosphor-astro/WhatsappLogo.astro";
+
 import Button from "./Button.astro";
 ---
 
-<section class="w-full flex justify-center items-center py-12">
+<section id="contact" class="w-full flex justify-center items-center py-12">
   <div
-    class="w-full max-w-6xl flex flex-col gap-8 md:gap-4 md:grid md:grid-cols-2 justify-between rounded-md bg-neutral-50 p-16"
+    class="w-full max-w-7xl flex flex-col gap-8 md:gap-4 md:grid md:grid-cols-2 justify-between rounded-md bg-neutral-50 p-16"
   >
     <div class="flex flex-col justify-center items-center md:items-start gap-4">
       <div class="flex flex-col">
         <h2 class="text-5xl font-bold">Contáctanos</h2>
         <p>Preguntanos por nuestras ofertas!</p>
       </div>
-      <Button>Tenemos whatsapp!</Button>
+      <Button
+        target="_blank"
+        href="https://wa.me/525631066250"
+        classes="flex gap-2"
+        ><WhatsappLogo class="w-6" />Tenemos Whatsapp!</Button
+      >
     </div>
     <div class="flex flex-col gap-4 md:gap-6">
       <div
-        class="flex gap-2 flex-col items-center text-center md:text-left md:gap-4 md:flex-row"
+        class="flex flex-col text-center items-center md:items-start md:text-left md:gap-4 md:flex-row"
       >
-        <img class="bg-red-500 w-10 aspect-square rounded-md" />
+        <MailBox class="w-10" />
         <div class="flex flex-col">
-          <h4 class="text-xl font-semibold">Correo</h4>
-          <a class="text-red-500 italic hover:underline cursor-pointer"
-            >contacto@gmail.com</a
-          >
+          <h4 class="text-xl font-semibold">Correos</h4>
+          <a
+            href="mailto:comercial.mahema1@gmail.com"
+            class="text-red-500 italic hover:underline cursor-pointer"
+            >comercial.mahema1@gmail.com
+          </a>
+          <a
+            target="_blank"
+            href="mailto:comercial.mahema2@gmail.com"
+            class="text-red-500 italic hover:underline cursor-pointer"
+            >comercial.mahema2@gmail.com
+          </a>
         </div>
       </div>
       <div
-        class="flex gap-2 flex-col items-center text-center md:text-left md:gap-4 md:flex-row"
+        class="flex flex-col text-center items-center md:items-start md:text-left md:gap-4 md:flex-row"
       >
-        <img class="bg-red-500 w-10 aspect-square rounded-md" />
+        <Phone class="w-10" />
         <div class="flex flex-col">
-          <h4 class="text-xl font-semibold">Teléfono</h4>
-          <a class="text-red-500 italic hover:underline cursor-pointer"
-            >(55) 3026 3069</a
-          >
+          <h4 class="text-xl font-semibold">Teléfonos</h4>
+          <a target="_blank" href="tel:+525594004162">
+            Oficina:
+            <span class="text-red-500 italic hover:underline cursor-pointer">
+              (55) 9400 4162
+            </span>
+          </a>
+          <a target="_blank" href="tel:+525631066250">
+            Celular:
+            <span class="text-red-500 italic hover:underline cursor-pointer">
+              (56) 3106 6250
+            </span>
+          </a>
         </div>
       </div>
       <div
-        class="flex gap-2 flex-col items-center text-center md:text-left md:gap-4 md:flex-row"
+        class="flex flex-col text-center items-center md:items-start md:text-left md:gap-4 md:flex-row"
       >
-        <img class="bg-red-500 w-10 aspect-square rounded-md" />
+        <MapPin class="w-10" />
         <div class="flex flex-col">
           <h4 class="text-xl font-semibold">Ubicación</h4>
-          <a class="text-red-500 italic hover:underline cursor-pointer"
-            >Calle ##, colonia, estado. Código Postal</a
+          <a
+            target="_blank"
+            href="https://maps.app.goo.gl/p9K9TFW7RVa6wdgA6"
+            class="text-red-500 italic hover:underline cursor-pointer"
+            >De los Molinos, Villas de la Hacienda, Atizapan de Zaragoza. Estado
+            de México</a
           >
         </div>
       </div>
